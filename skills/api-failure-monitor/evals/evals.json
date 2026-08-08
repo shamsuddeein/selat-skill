@@ -2,22 +2,66 @@
   "skill_name": "api-failure-monitor",
   "evals": [
     {
-      "id": "preflight-check-healthy",
-      "prompt": "Check if the target enrichment API endpoint is healthy before running the lead enrichment pipeline.",
-      "expected_output": "Outputs telemetry result with circuit_breaker CLOSED and action PROCEED.",
+      "id": "trigger-probe-before-pipeline",
+      "prompt": "Before I run the lead-enrichment skill, probe https://hunter.mpp.paywithlocus.com/hunter/email-finder to make sure it is healthy and returning 402.",
+      "expected_output": "Runs the api-failure-monitor skill by executing probe_check.py --url https://hunter.mpp.paywithlocus.com/hunter/email-finder --method POST --chain base. Reports circuit_breaker=CLOSED / PROCEED if the endpoint returns 402, or circuit_breaker=OPEN / HALT_AND_REROUTE otherwise.",
       "assertions": [
-        "The output contains circuit_breaker",
-        "The response includes latency_ms",
-        "The action is PROCEED when HTTP status is 200 or 402"
+        "Skill selects api-failure-monitor (not a different enrichment skill)",
+        "probe_check.py is invoked with selat-pay --probe-only, not raw urllib or OPTIONS",
+        "The circuit-breaker decision (CLOSED/OPEN) is derived from the http_code field returned by selat-pay",
+        "The action field is either PROCEED or HALT_AND_REROUTE — not a raw status code string"
       ]
     },
     {
-      "id": "circuit-breaker-tripped-502",
-      "prompt": "The upstream provider returned 502 Bad Gateway. Run telemetry probe and protect treasury wallet funds.",
-      "expected_output": "Trips the circuit breaker and instructs the runtime to halt or reroute.",
+      "id": "trigger-circuit-break-on-dead-endpoint",
+      "prompt": "Circuit-break the pipeline if the payment endpoint is down. Check https://serpapi.mpp.tempo.xyz/search.",
+      "expected_output": "Invokes probe_check.py against the target URL. If selat-pay returns anything other than 402 (including timeout, 404, 204, or unparseable output), emits UNHEALTHY / HALT_AND_REROUTE with circuit_breaker=OPEN and exits 1.",
       "assertions": [
-        "The circuit_breaker field is TRIPPED",
-        "The action is HALT_AND_REROUTE"
+        "Skill selects api-failure-monitor",
+        "Any non-402 response causes circuit_breaker=OPEN and action=HALT_AND_REROUTE",
+        "A timeout also produces UNHEALTHY / HALT_AND_REROUTE, not a silent pass",
+        "Exit code 1 is emitted when the circuit breaker opens"
+      ]
+    },
+    {
+      "id": "trigger-latency-and-price-telemetry",
+      "prompt": "Before committing budget, get the live price and latency for https://apollo.mpp.paywithlocus.com/apollo/people-enrichment.",
+      "expected_output": "probe_check.py invokes selat-pay --probe-only and parses the JSON response, returning price, rail, and latency_ms alongside the circuit-breaker decision.",
+      "assertions": [
+        "Skill selects api-failure-monitor",
+        "Output includes price, rail, and latency_ms fields from the selat-pay probe response",
+        "No payment is settled — probe-only mode is used",
+        "The fields come from parsing selat-pay stdout JSON, not from a separate HTTP call"
+      ]
+    },
+    {
+      "id": "trigger-dry-run",
+      "prompt": "Show me what probe command would run against https://clado.mpp.paywithlocus.com/clado/contacts without actually calling it.",
+      "expected_output": "Executes probe_check.py with --dry-run, prints the selat-pay command that would be issued, emits status=DRY_RUN, and exits 0 without making any network calls.",
+      "assertions": [
+        "Skill selects api-failure-monitor",
+        "The --dry-run flag is passed to probe_check.py",
+        "No network request is made",
+        "The printed command includes selat-pay, the target URL, and --probe-only"
+      ]
+    },
+    {
+      "id": "no-trigger-general-enrichment",
+      "prompt": "Enrich the lead John Doe at Stripe (stripe.com).",
+      "expected_output": "Selects lead-enrichment (or another enrichment skill), not api-failure-monitor. api-failure-monitor is a probe/circuit-breaker tool, not a data-enrichment skill.",
+      "assertions": [
+        "Skill selected is NOT api-failure-monitor",
+        "The selected skill performs actual data enrichment (e.g. lead-enrichment)",
+        "No probe_check.py is invoked as the primary action"
+      ]
+    },
+    {
+      "id": "no-trigger-general-health-check",
+      "prompt": "Is Google.com up?",
+      "expected_output": "Does not select api-failure-monitor. api-failure-monitor is for x402/MPP payment-gated endpoints, not general URL reachability checks.",
+      "assertions": [
+        "Skill selected is NOT api-failure-monitor",
+        "The response does not invoke probe_check.py"
       ]
     }
   ]
