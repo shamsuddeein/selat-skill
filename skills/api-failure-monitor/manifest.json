@@ -1,0 +1,36 @@
+{
+  "schema": "selat-skill/v1",
+  "name": "api-failure-monitor",
+  "description": "Runtime circuit-breaker preflight: probes one or more x402/MPP endpoints using selat-pay --probe-only to confirm live 402 signals and live prices before launching a multi-step paid pipeline. Halts and reroutes on any non-402 response, timeout, dead URL, or probe error.",
+  "params": {
+    "targetUrl": {
+      "required": true,
+      "default": "https://serpapi.mpp.tempo.xyz/search",
+      "description": "x402/MPP endpoint to probe, e.g. https://serpapi.mpp.tempo.xyz/search"
+    },
+    "method": {
+      "required": false,
+      "default": "GET",
+      "description": "HTTP method for the probe (GET or POST). Passed to selat-pay --probe-only."
+    },
+    "chain": {
+      "required": false,
+      "default": "base",
+      "description": "Chain flag forwarded to selat-pay --probe-only. Probing is chain-independent and free; this satisfies selat-pay's required --chain argument."
+    },
+    "timeoutSeconds": {
+      "required": false,
+      "default": "15",
+      "description": "Probe timeout in seconds. Triggers HALT_AND_REROUTE on expiry."
+    }
+  },
+  "steps": [
+    {
+      "label": "probe endpoint — selat-pay --probe-only circuit-breaker check",
+      "method": "GET",
+      "url": "${targetUrl}",
+      "script": "scripts/probe_check.py",
+      "args": ["--url", "${targetUrl}", "--method", "${method}", "--chain", "${chain}", "--timeout", "${timeoutSeconds}", "--json"]
+    }
+  ]
+}

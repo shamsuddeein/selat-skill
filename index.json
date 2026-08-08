@@ -108,6 +108,12 @@
       "rail": "routed",
       "kind": "multi",
       "description": "FIFA World Cup 26 U.S. stadium hotel planner: routed x402 Fanfare trip context plus routed MPP hotel discovery, reviews, distance scoring, and Google Map pins."
+    },
+    {
+      "name": "api-failure-monitor",
+      "rail": "none",
+      "kind": "script",
+      "description": "Runtime circuit-breaker preflight: probes x402/MPP endpoints using selat-pay --probe-only to confirm live 402 signals and live prices before launching a multi-step paid pipeline. Halts and reroutes on any non-402 response, timeout, dead URL, or probe error."
     }
   ]
 }
