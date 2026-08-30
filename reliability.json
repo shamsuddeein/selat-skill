@@ -1,6 +1,6 @@
 {
   "schema": "selat-reliability/v1",
-  "generatedAt": "2026-08-30T16:30:58.439Z",
+  "generatedAt": "2026-08-30T20:53:40.862Z",
   "method": "selat-pay --probe-only (free live-402 quote; no paid call)",
   "router": "https://router.selat.ai",
   "summary": {
@@ -14,7 +14,7 @@
       "name": "account-intel",
       "rail": "mixed",
       "status": "ok",
-      "checkedAt": "2026-08-30T16:30:58.439Z",
+      "checkedAt": "2026-08-30T20:53:40.862Z",
       "steps": [
         {
           "label": "X/Twitter profile — SELAT Twitter API (x402 via Circle Gateway)",
@@ -26,7 +26,7 @@
           "reachable": true,
           "livePriceUsd": 0.001,
           "withinCap": true,
-          "latencyMs": 686,
+          "latencyMs": 807,
           "error": null
         },
         {
@@ -39,7 +39,7 @@
           "reachable": true,
           "livePriceUsd": 0.001,
           "withinCap": true,
-          "latencyMs": 374,
+          "latencyMs": 557,
           "error": null
         },
         {
@@ -52,7 +52,7 @@
           "reachable": true,
           "livePriceUsd": 0.021,
           "withinCap": true,
-          "latencyMs": 3272,
+          "latencyMs": 1405,
           "error": null
         },
         {
@@ -65,7 +65,7 @@
           "reachable": true,
           "livePriceUsd": 0.03675,
           "withinCap": true,
-          "latencyMs": 880,
+          "latencyMs": 1059,
           "error": null
         },
         {
@@ -78,7 +78,7 @@
           "reachable": true,
           "livePriceUsd": 0.00735,
           "withinCap": true,
-          "latencyMs": 597,
+          "latencyMs": 862,
           "error": null
         },
         {
@@ -91,7 +91,7 @@
           "reachable": true,
           "livePriceUsd": 0.001,
           "withinCap": true,
-          "latencyMs": 483,
+          "latencyMs": 757,
           "error": null
         }
       ]
@@ -100,7 +100,7 @@
       "name": "api-failure-monitor",
       "rail": "routed",
       "status": "down",
-      "checkedAt": "2026-08-30T16:30:58.439Z",
+      "checkedAt": "2026-08-30T20:53:40.862Z",
       "steps": [
         {
           "label": "probe endpoint — selat-pay --probe-only circuit-breaker check",
@@ -121,7 +121,7 @@
       "name": "comprehensive-enrichment",
       "rail": "MPP on Tempo",
       "status": "degraded",
-      "checkedAt": "2026-08-30T16:30:58.439Z",
+      "checkedAt": "2026-08-30T20:53:40.862Z",
       "steps": [
         {
           "label": "person deep search — Clado search (MPP on Tempo)",
@@ -133,7 +133,7 @@
           "reachable": true,
           "livePriceUsd": 0.31815,
           "withinCap": true,
-          "latencyMs": 844,
+          "latencyMs": 1053,
           "error": null
         },
         {
@@ -146,7 +146,7 @@
           "reachable": true,
           "livePriceUsd": 0.0399,
           "withinCap": true,
-          "latencyMs": 832,
+          "latencyMs": 1013,
           "error": null
         },
         {
@@ -159,7 +159,7 @@
           "reachable": true,
           "livePriceUsd": 0.01365,
           "withinCap": true,
-          "latencyMs": 844,
+          "latencyMs": 1020,
           "error": null
         },
         {
@@ -172,7 +172,7 @@
           "reachable": true,
           "livePriceUsd": 0.01365,
           "withinCap": true,
-          "latencyMs": 635,
+          "latencyMs": 761,
           "error": null
         },
         {
@@ -185,7 +185,7 @@
           "reachable": true,
           "livePriceUsd": 0.0084,
           "withinCap": true,
-          "latencyMs": 629,
+          "latencyMs": 750,
           "error": null
         },
         {
@@ -198,7 +198,7 @@
           "reachable": true,
           "livePriceUsd": 0.04515,
           "withinCap": true,
-          "latencyMs": 577,
+          "latencyMs": 888,
           "error": null
         },
         {
@@ -211,7 +211,7 @@
           "reachable": true,
           "livePriceUsd": 0.00525,
           "withinCap": true,
-          "latencyMs": 1102,
+          "latencyMs": 1223,
           "error": null
         },
         {
@@ -224,7 +224,7 @@
           "reachable": false,
           "livePriceUsd": null,
           "withinCap": false,
-          "latencyMs": 721,
+          "latencyMs": 846,
           "error": "no x402 or MPP challenge detected at https://abstract-company-enrichment.mpp.paywithlocus.com/abstract-company-enrichment/lookup"
         },
         {
@@ -237,7 +237,7 @@
           "reachable": true,
           "livePriceUsd": 0.10815,
           "withinCap": true,
-          "latencyMs": 618,
+          "latencyMs": 756,
           "error": null
         },
         {
@@ -250,7 +250,7 @@
           "reachable": true,
           "livePriceUsd": 0.03675,
           "withinCap": true,
-          "latencyMs": 813,
+          "latencyMs": 965,
           "error": null
         },
         {
@@ -263,7 +263,7 @@
           "reachable": true,
           "livePriceUsd": 0.00525,
           "withinCap": true,
-          "latencyMs": 949,
+          "latencyMs": 1206,
           "error": null
         },
         {
@@ -276,7 +276,7 @@
           "reachable": true,
           "livePriceUsd": 0.00525,
           "withinCap": true,
-          "latencyMs": 841,
+          "latencyMs": 1098,
           "error": null
         },
         {
@@ -289,7 +289,7 @@
           "reachable": true,
           "livePriceUsd": 0.00525,
           "withinCap": true,
-          "latencyMs": 721,
+          "latencyMs": 719,
           "error": null
         }
       ]
@@ -298,7 +298,7 @@
       "name": "email-campaign",
       "rail": "MPP on Tempo",
       "status": "degraded",
-      "checkedAt": "2026-08-30T16:30:58.439Z",
+      "checkedAt": "2026-08-30T20:53:40.862Z",
       "steps": [
         {
           "label": "emails by domain — Hunter (MPP on Tempo)",
@@ -310,7 +310,7 @@
           "reachable": true,
           "livePriceUsd": 0.10815,
           "withinCap": true,
-          "latencyMs": 631,
+          "latencyMs": 900,
           "error": null
         },
         {
@@ -323,7 +323,7 @@
           "reachable": true,
           "livePriceUsd": 0.01365,
           "withinCap": true,
-          "latencyMs": 605,
+          "latencyMs": 765,
           "error": null
         },
         {
@@ -336,7 +336,7 @@
           "reachable": true,
           "livePriceUsd": 0.0084,
           "withinCap": true,
-          "latencyMs": 585,
+          "latencyMs": 718,
           "error": null
         },
         {
@@ -349,7 +349,7 @@
           "reachable": true,
           "livePriceUsd": 0.0084,
           "withinCap": true,
-          "latencyMs": 759,
+          "latencyMs": 834,
           "error": null
         },
         {
@@ -362,7 +362,7 @@
           "reachable": true,
           "livePriceUsd": 0.0399,
           "withinCap": true,
-          "latencyMs": 780,
+          "latencyMs": 977,
           "error": null
         },
         {
@@ -375,7 +375,7 @@
           "reachable": false,
           "livePriceUsd": null,
           "withinCap": false,
-          "latencyMs": 646,
+          "latencyMs": 714,
           "error": "no x402 or MPP challenge detected at https://abstract-company-enrichment.mpp.paywithlocus.com/abstract-company-enrichment/lookup"
         }
       ]
@@ -384,476 +384,10 @@
       "name": "enrich-waterfall",
       "rail": "mixed",
       "status": "degraded",
-      "checkedAt": "2026-08-30T16:30:58.439Z",
+      "checkedAt": "2026-08-30T20:53:40.862Z",
       "steps": [
         {
           "label": "person resolve — Apollo people enrichment (MPP on Tempo)",
-          "rail": "MPP on Tempo",
-          "method": "POST",
-          "maxAmount": 0.1,
-          "url": "https://apollo.mpp.paywithlocus.com/apollo/people-enrichment",
-          "mode": "routed-mpp",
-          "reachable": true,
-          "livePriceUsd": 0.0399,
-          "withinCap": true,
-          "latencyMs": 600,
-          "error": null
-        },
-        {
-          "label": "person resolve by email — Hunter email enrichment (MPP on Tempo)",
-          "rail": "MPP on Tempo",
-          "method": "POST",
-          "maxAmount": 0.15,
-          "url": "https://hunter.mpp.paywithlocus.com/hunter/email-enrichment",
-          "mode": "routed-mpp",
-          "reachable": true,
-          "livePriceUsd": 0.01365,
-          "withinCap": true,
-          "latencyMs": 572,
-          "error": null
-        },
-        {
-          "label": "person resolve by LinkedIn URL — Clado LinkedIn profile (MPP on Tempo)",
-          "rail": "MPP on Tempo",
-          "method": "POST",
-          "maxAmount": 0.15,
-          "url": "https://clado.mpp.paywithlocus.com/clado/linkedin-profile",
-          "mode": "routed-mpp",
-          "reachable": true,
-          "livePriceUsd": 0.01365,
-          "withinCap": true,
-          "latencyMs": 748,
-          "error": null
-        },
-        {
-          "label": "person+company resolve by email — Hunter combined enrichment (MPP on Tempo)",
-          "rail": "MPP on Tempo",
-          "method": "POST",
-          "maxAmount": 0.25,
-          "url": "https://hunter.mpp.paywithlocus.com/hunter/combined-enrichment",
-          "mode": "routed-mpp",
-          "reachable": true,
-          "livePriceUsd": 0.02415,
-          "withinCap": true,
-          "latencyMs": 586,
-          "error": null
-        },
-        {
-          "label": "company anchor (no domain) — Apollo org search by name (MPP on Tempo)",
-          "rail": "MPP on Tempo",
-          "method": "POST",
-          "maxAmount": 0.1,
-          "url": "https://apollo.mpp.paywithlocus.com/apollo/org-search",
-          "mode": "routed-mpp",
-          "reachable": true,
-          "livePriceUsd": 0.00525,
-          "withinCap": true,
-          "latencyMs": 606,
-          "error": null
-        },
-        {
-          "label": "company anchor — Abstract Company Enrichment lookup by domain (MPP on Tempo)",
-          "rail": "MPP on Tempo",
-          "method": "POST",
-          "maxAmount": 0.1,
-          "url": "https://abstract-company-enrichment.mpp.paywithlocus.com/abstract-company-enrichment/lookup",
-          "mode": null,
-          "reachable": false,
-          "livePriceUsd": null,
-          "withinCap": false,
-          "latencyMs": 634,
-          "error": "no x402 or MPP challenge detected at https://abstract-company-enrichment.mpp.paywithlocus.com/abstract-company-enrichment/lookup"
-        },
-        {
-          "label": "company anchor + tech + headcount — Apollo org enrichment by domain (MPP on Tempo)",
-          "rail": "MPP on Tempo",
-          "method": "POST",
-          "maxAmount": 0.1,
-          "url": "https://apollo.mpp.paywithlocus.com/apollo/org-enrichment",
-          "mode": "routed-mpp",
-          "reachable": true,
-          "livePriceUsd": 0.0399,
-          "withinCap": true,
-          "latencyMs": 575,
-          "error": null
-        },
-        {
-          "label": "company anchor — Hunter company enrichment by domain (MPP on Tempo)",
-          "rail": "MPP on Tempo",
-          "method": "POST",
-          "maxAmount": 0.15,
-          "url": "https://hunter.mpp.paywithlocus.com/hunter/company-enrichment",
-          "mode": "routed-mpp",
-          "reachable": true,
-          "livePriceUsd": 0.01365,
-          "withinCap": true,
-          "latencyMs": 569,
-          "error": null
-        },
-        {
-          "label": "email find by name — Hunter email-finder (MPP on Tempo)",
-          "rail": "MPP on Tempo",
-          "method": "POST",
-          "maxAmount": 0.15,
-          "url": "https://hunter.mpp.paywithlocus.com/hunter/email-finder",
-          "mode": "routed-mpp",
-          "reachable": true,
-          "livePriceUsd": 0.01365,
-          "withinCap": true,
-          "latencyMs": 597,
-          "error": null
-        },
-        {
-          "label": "X/Twitter profile — SELAT user info (x402 via Circle Gateway)",
-          "rail": "x402 via Circle Gateway",
-          "method": "GET",
-          "maxAmount": 0.1,
-          "url": "https://catalog.selat.ai/twitter/user/info?userName=John%20Doe",
-          "mode": "direct",
-          "reachable": true,
-          "livePriceUsd": 0.001,
-          "withinCap": true,
-          "latencyMs": 359,
-          "error": null
-        },
-        {
-          "label": "LinkedIn person/company posts — Clado scrape (MPP on Tempo)",
-          "rail": "MPP on Tempo",
-          "method": "POST",
-          "maxAmount": 0.25,
-          "url": "https://clado.mpp.paywithlocus.com/clado/scrape",
-          "mode": "routed-mpp",
-          "reachable": true,
-          "livePriceUsd": 0.02415,
-          "withinCap": true,
-          "latencyMs": 749,
-          "error": null
-        },
-        {
-          "label": "Instagram profile — StableSocial (MPP on Tempo)",
-          "rail": "MPP on Tempo",
-          "method": "POST",
-          "maxAmount": 0.75,
-          "url": "https://stablesocial.dev/api/instagram/profile",
-          "mode": "routed-mpp",
-          "reachable": true,
-          "livePriceUsd": 0.063,
-          "withinCap": true,
-          "latencyMs": 680,
-          "error": null
-        },
-        {
-          "label": "TikTok profile — StableSocial (MPP on Tempo)",
-          "rail": "MPP on Tempo",
-          "method": "POST",
-          "maxAmount": 0.75,
-          "url": "https://stablesocial.dev/api/tiktok/profile",
-          "mode": "routed-mpp",
-          "reachable": true,
-          "livePriceUsd": 0.063,
-          "withinCap": true,
-          "latencyMs": 651,
-          "error": null
-        },
-        {
-          "label": "job openings / hiring signals — Apollo job postings by org id (MPP on Tempo)",
-          "rail": "MPP on Tempo",
-          "method": "POST",
-          "maxAmount": 0.1,
-          "url": "https://apollo.mpp.paywithlocus.com/apollo/job-postings",
-          "mode": "routed-mpp",
-          "reachable": true,
-          "livePriceUsd": 0.00525,
-          "withinCap": true,
-          "latencyMs": 746,
-          "error": null
-        },
-        {
-          "label": "news events — Brave news search for company (MPP on Tempo)",
-          "rail": "MPP on Tempo",
-          "method": "POST",
-          "maxAmount": 0.4,
-          "url": "https://brave.mpp.paywithlocus.com/brave/news-search",
-          "mode": "routed-mpp",
-          "reachable": true,
-          "livePriceUsd": 0.03675,
-          "withinCap": true,
-          "latencyMs": 800,
-          "error": null
-        },
-        {
-          "label": "financing events — Brave news search for funding rounds (MPP on Tempo)",
-          "rail": "MPP on Tempo",
-          "method": "POST",
-          "maxAmount": 0.4,
-          "url": "https://brave.mpp.paywithlocus.com/brave/news-search",
-          "mode": "routed-mpp",
-          "reachable": true,
-          "livePriceUsd": 0.03675,
-          "withinCap": true,
-          "latencyMs": 583,
-          "error": null
-        },
-        {
-          "label": "business connections / KG record — Diffbot Knowledge Graph enhance (MPP on Tempo)",
-          "rail": "MPP on Tempo",
-          "method": "POST",
-          "maxAmount": 0.4,
-          "url": "https://diffbot-kg.mpp.paywithlocus.com/diffbot-kg/enhance",
-          "mode": "routed-mpp",
-          "reachable": true,
-          "livePriceUsd": 0.03675,
-          "withinCap": true,
-          "latencyMs": 720,
-          "error": null
-        },
-        {
-          "label": "contact reveal (email + phone) from LinkedIn — Clado contacts (MPP on Tempo)",
-          "rail": "MPP on Tempo",
-          "method": "POST",
-          "maxAmount": 0.5,
-          "url": "https://clado.mpp.paywithlocus.com/clado/contacts",
-          "mode": "routed-mpp",
-          "reachable": true,
-          "livePriceUsd": 0.04515,
-          "withinCap": true,
-          "latencyMs": 736,
-          "error": null
-        },
-        {
-          "label": "person search by handle / natural language — Clado search (MPP on Tempo)",
-          "rail": "MPP on Tempo",
-          "method": "POST",
-          "maxAmount": 1,
-          "url": "https://clado.mpp.paywithlocus.com/clado/search",
-          "mode": "routed-mpp",
-          "reachable": true,
-          "livePriceUsd": 0.31815,
-          "withinCap": true,
-          "latencyMs": 572,
-          "error": null
-        },
-        {
-          "label": "email verify — Hunter email-verifier (MPP on Tempo)",
-          "rail": "MPP on Tempo",
-          "method": "POST",
-          "maxAmount": 0.1,
-          "url": "https://hunter.mpp.paywithlocus.com/hunter/email-verifier",
-          "mode": "routed-mpp",
-          "reachable": true,
-          "livePriceUsd": 0.0084,
-          "withinCap": true,
-          "latencyMs": 727,
-          "error": null
-        }
-      ]
-    },
-    {
-      "name": "financial-intel",
-      "rail": "mixed",
-      "status": "ok",
-      "checkedAt": "2026-08-30T16:30:58.439Z",
-      "steps": [
-        {
-          "label": "spot price — Alchemy (x402 via Circle Gateway)",
-          "rail": "x402 via Circle Gateway",
-          "method": "GET",
-          "maxAmount": 0.01,
-          "url": "https://x402.alchemy.com/prices/v1/tokens/by-symbol?symbols=ETH",
-          "mode": "direct",
-          "reachable": true,
-          "livePriceUsd": 0.001,
-          "withinCap": true,
-          "latencyMs": 469,
-          "error": null
-        },
-        {
-          "label": "token market data — CoinGecko coins-markets (MPP on Tempo)",
-          "rail": "MPP on Tempo",
-          "method": "POST",
-          "maxAmount": 0.1,
-          "url": "https://coingecko.mpp.paywithlocus.com/coingecko/coins-markets",
-          "mode": "routed-mpp",
-          "reachable": true,
-          "livePriceUsd": 0.063,
-          "withinCap": true,
-          "latencyMs": 898,
-          "error": null
-        },
-        {
-          "label": "equities / macro quote — Alpha Vantage global-quote (MPP on Tempo)",
-          "rail": "MPP on Tempo",
-          "method": "POST",
-          "maxAmount": 0.05,
-          "url": "https://alphavantage.mpp.paywithlocus.com/alphavantage/global-quote",
-          "mode": "routed-mpp",
-          "reachable": true,
-          "livePriceUsd": 0.0084,
-          "withinCap": true,
-          "latencyMs": 813,
-          "error": null
-        },
-        {
-          "label": "on-chain smart-money holdings — Nansen (MPP on Tempo)",
-          "rail": "MPP on Tempo",
-          "method": "POST",
-          "maxAmount": 0.1,
-          "url": "https://api.nansen.ai/api/v1/smart-money/holdings",
-          "mode": "routed-mpp",
-          "reachable": true,
-          "livePriceUsd": 0.0525,
-          "withinCap": true,
-          "latencyMs": 716,
-          "error": null
-        },
-        {
-          "label": "fundamentals / funding rounds — Messari (x402 on Base)",
-          "rail": "x402 on Base",
-          "method": "GET",
-          "maxAmount": 0.25,
-          "url": "https://api.messari.io/funding/v1/rounds",
-          "mode": "routed-x402",
-          "reachable": true,
-          "livePriceUsd": 0.1575,
-          "withinCap": true,
-          "latencyMs": 861,
-          "error": null
-        },
-        {
-          "label": "market news / context — Exa search (MPP on Tempo)",
-          "rail": "MPP on Tempo",
-          "method": "POST",
-          "maxAmount": 0.05,
-          "url": "https://api.exa.ai/search",
-          "mode": "routed-mpp",
-          "reachable": true,
-          "livePriceUsd": 0.00735,
-          "withinCap": true,
-          "latencyMs": 607,
-          "error": null
-        }
-      ]
-    },
-    {
-      "name": "find-twitter-influencers",
-      "rail": "mixed",
-      "status": "degraded",
-      "checkedAt": "2026-08-30T16:30:58.439Z",
-      "steps": [
-        {
-          "label": "resolve company by name — Apollo org search (MPP on Tempo)",
-          "rail": "MPP on Tempo",
-          "method": "POST",
-          "maxAmount": 0.1,
-          "url": "https://apollo.mpp.paywithlocus.com/apollo/org-search",
-          "mode": "routed-mpp",
-          "reachable": true,
-          "livePriceUsd": 0.00525,
-          "withinCap": true,
-          "latencyMs": 743,
-          "error": null
-        },
-        {
-          "label": "resolve company by domain — Abstract Company Enrichment (MPP on Tempo)",
-          "rail": "MPP on Tempo",
-          "method": "POST",
-          "maxAmount": 0.1,
-          "url": "https://abstract-company-enrichment.mpp.paywithlocus.com/abstract-company-enrichment/lookup",
-          "mode": null,
-          "reachable": false,
-          "livePriceUsd": null,
-          "withinCap": false,
-          "latencyMs": 626,
-          "error": "no x402 or MPP challenge detected at https://abstract-company-enrichment.mpp.paywithlocus.com/abstract-company-enrichment/lookup"
-        },
-        {
-          "label": "discover curated influencer listicles — Exa search (MPP on Tempo)",
-          "rail": "MPP on Tempo",
-          "method": "POST",
-          "maxAmount": 0.1,
-          "url": "https://exa.mpp.tempo.xyz/search",
-          "mode": "routed-mpp",
-          "reachable": true,
-          "livePriceUsd": 0.00525,
-          "withinCap": true,
-          "latencyMs": 515,
-          "error": null
-        },
-        {
-          "label": "expand from a strong listicle — Exa findSimilar (MPP on Tempo)",
-          "rail": "MPP on Tempo",
-          "method": "POST",
-          "maxAmount": 0.1,
-          "url": "https://exa.mpp.tempo.xyz/findSimilar",
-          "mode": "routed-mpp",
-          "reachable": true,
-          "livePriceUsd": 0.00525,
-          "withinCap": true,
-          "latencyMs": 496,
-          "error": null
-        },
-        {
-          "label": "fetch Twitter profile + counts — SELAT Twitter API (x402 via Circle Gateway)",
-          "rail": "x402 via Circle Gateway",
-          "method": "GET",
-          "maxAmount": 0.1,
-          "url": "https://catalog.selat.ai/twitter/user/info?userName=examplehandle",
-          "mode": "direct",
-          "reachable": true,
-          "livePriceUsd": 0.001,
-          "withinCap": true,
-          "latencyMs": 371,
-          "error": null
-        },
-        {
-          "label": "fetch top tweets + engagement — SELAT Twitter API (x402 via Circle Gateway)",
-          "rail": "x402 via Circle Gateway",
-          "method": "GET",
-          "maxAmount": 0.1,
-          "url": "https://catalog.selat.ai/twitter/user/last_tweets?userName=examplehandle",
-          "mode": "direct",
-          "reachable": true,
-          "livePriceUsd": 0.001,
-          "withinCap": true,
-          "latencyMs": 345,
-          "error": null
-        },
-        {
-          "label": "find email by name + domain — Hunter email-finder (MPP on Tempo)",
-          "rail": "MPP on Tempo",
-          "method": "POST",
-          "maxAmount": 0.15,
-          "url": "https://hunter.mpp.paywithlocus.com/hunter/email-finder",
-          "mode": "routed-mpp",
-          "reachable": true,
-          "livePriceUsd": 0.01365,
-          "withinCap": true,
-          "latencyMs": 726,
-          "error": null
-        },
-        {
-          "label": "LinkedIn-to-contact (email + phone) — Clado contacts (MPP on Tempo)",
-          "rail": "MPP on Tempo",
-          "method": "POST",
-          "maxAmount": 0.5,
-          "url": "https://clado.mpp.paywithlocus.com/clado/contacts",
-          "mode": "routed-mpp",
-          "reachable": true,
-          "livePriceUsd": 0.04515,
-          "withinCap": true,
-          "latencyMs": 730,
-          "error": null
-        }
-      ]
-    },
-    {
-      "name": "gtm-enrichment-deep",
-      "rail": "MPP on Tempo",
-      "status": "ok",
-      "checkedAt": "2026-08-30T16:30:58.439Z",
-      "steps": [
-        {
-          "label": "enrich person — Apollo (MPP on Tempo)",
           "rail": "MPP on Tempo",
           "method": "POST",
           "maxAmount": 0.1,
@@ -866,106 +400,7 @@
           "error": null
         },
         {
-          "label": "enrich company — Hunter (MPP on Tempo)",
-          "rail": "MPP on Tempo",
-          "method": "POST",
-          "maxAmount": 0.15,
-          "url": "https://hunter.mpp.paywithlocus.com/hunter/company-enrichment",
-          "mode": "routed-mpp",
-          "reachable": true,
-          "livePriceUsd": 0.01365,
-          "withinCap": true,
-          "latencyMs": 584,
-          "error": null
-        },
-        {
-          "label": "fallback org enrich — Apollo (MPP on Tempo) — run only if Hunter returned no funding data",
-          "rail": "MPP on Tempo",
-          "method": "POST",
-          "maxAmount": 0.1,
-          "url": "https://apollo.mpp.paywithlocus.com/apollo/org-enrichment",
-          "mode": "routed-mpp",
-          "reachable": true,
-          "livePriceUsd": 0.0399,
-          "withinCap": true,
-          "latencyMs": 609,
-          "error": null
-        }
-      ]
-    },
-    {
-      "name": "gtm-enrichment-smart",
-      "rail": "mixed",
-      "status": "degraded",
-      "checkedAt": "2026-08-30T16:30:58.439Z",
-      "steps": [
-        {
-          "label": "person enrich — Apollo people-enrichment (MPP on Tempo)",
-          "rail": "MPP on Tempo",
-          "method": "POST",
-          "maxAmount": 0.1,
-          "url": "https://apollo.mpp.paywithlocus.com/apollo/people-enrichment",
-          "mode": "routed-mpp",
-          "reachable": true,
-          "livePriceUsd": 0.0399,
-          "withinCap": true,
-          "latencyMs": 578,
-          "error": null
-        },
-        {
-          "label": "person + company combined — Hunter combined-enrichment (MPP on Tempo)",
-          "rail": "MPP on Tempo",
-          "method": "POST",
-          "maxAmount": 0.25,
-          "url": "https://hunter.mpp.paywithlocus.com/hunter/combined-enrichment",
-          "mode": "routed-mpp",
-          "reachable": true,
-          "livePriceUsd": 0.02415,
-          "withinCap": true,
-          "latencyMs": 585,
-          "error": null
-        },
-        {
-          "label": "email deliverability — Hunter email-verifier (MPP on Tempo)",
-          "rail": "MPP on Tempo",
-          "method": "POST",
-          "maxAmount": 0.1,
-          "url": "https://hunter.mpp.paywithlocus.com/hunter/email-verifier",
-          "mode": "routed-mpp",
-          "reachable": true,
-          "livePriceUsd": 0.0084,
-          "withinCap": true,
-          "latencyMs": 574,
-          "error": null
-        },
-        {
-          "label": "company brand — Abstract Company Enrichment lookup (MPP on Tempo; skip for free email)",
-          "rail": "MPP on Tempo",
-          "method": "POST",
-          "maxAmount": 0.1,
-          "url": "https://abstract-company-enrichment.mpp.paywithlocus.com/abstract-company-enrichment/lookup",
-          "mode": null,
-          "reachable": false,
-          "livePriceUsd": null,
-          "withinCap": false,
-          "latencyMs": 637,
-          "error": "no x402 or MPP challenge detected at https://abstract-company-enrichment.mpp.paywithlocus.com/abstract-company-enrichment/lookup"
-        },
-        {
-          "label": "company gap-fill — Apollo org-enrichment (MPP on Tempo; only if funding missing)",
-          "rail": "MPP on Tempo",
-          "method": "POST",
-          "maxAmount": 0.1,
-          "url": "https://apollo.mpp.paywithlocus.com/apollo/org-enrichment",
-          "mode": "routed-mpp",
-          "reachable": true,
-          "livePriceUsd": 0.0399,
-          "withinCap": true,
-          "latencyMs": 601,
-          "error": null
-        },
-        {
-          "label": "person tie-breaker — Hunter email-enrichment (MPP on Tempo; only if sources conflict)",
+          "label": "person resolve by email — Hunter email enrichment (MPP on Tempo)",
           "rail": "MPP on Tempo",
           "method": "POST",
           "maxAmount": 0.15,
@@ -974,280 +409,11 @@
           "reachable": true,
           "livePriceUsd": 0.01365,
           "withinCap": true,
-          "latencyMs": 599,
+          "latencyMs": 753,
           "error": null
         },
         {
-          "label": "company fallback — Hunter company-enrichment (MPP on Tempo; only if major gaps + >500 employees)",
-          "rail": "MPP on Tempo",
-          "method": "POST",
-          "maxAmount": 0.15,
-          "url": "https://hunter.mpp.paywithlocus.com/hunter/company-enrichment",
-          "mode": "routed-mpp",
-          "reachable": true,
-          "livePriceUsd": 0.01365,
-          "withinCap": true,
-          "latencyMs": 583,
-          "error": null
-        },
-        {
-          "label": "social proof — SELAT Twitter user-info API (x402 via Circle Gateway; only if Twitter handle found)",
-          "rail": "x402 via Circle Gateway",
-          "method": "GET",
-          "maxAmount": 0.1,
-          "url": "https://catalog.selat.ai/twitter/user/info?userName=elonmusk",
-          "mode": "direct",
-          "reachable": true,
-          "livePriceUsd": 0.001,
-          "withinCap": true,
-          "latencyMs": 366,
-          "error": null
-        }
-      ]
-    },
-    {
-      "name": "lead-enrichment",
-      "rail": "MPP on Tempo",
-      "status": "ok",
-      "checkedAt": "2026-08-30T16:30:58.439Z",
-      "steps": [
-        {
-          "label": "find email — Hunter Email Finder (MPP on Tempo)",
-          "rail": "MPP on Tempo",
-          "method": "POST",
-          "maxAmount": 0.15,
-          "url": "https://hunter.mpp.paywithlocus.com/hunter/email-finder",
-          "mode": "routed-mpp",
-          "reachable": true,
-          "livePriceUsd": 0.01365,
-          "withinCap": true,
-          "latencyMs": 587,
-          "error": null
-        },
-        {
-          "label": "verify email — Hunter Email Verifier (MPP on Tempo)",
-          "rail": "MPP on Tempo",
-          "method": "POST",
-          "maxAmount": 0.1,
-          "url": "https://hunter.mpp.paywithlocus.com/hunter/email-verifier",
-          "mode": "routed-mpp",
-          "reachable": true,
-          "livePriceUsd": 0.0084,
-          "withinCap": true,
-          "latencyMs": 596,
-          "error": null
-        },
-        {
-          "label": "enrich lead — Apollo People Enrichment (MPP on Tempo)",
-          "rail": "MPP on Tempo",
-          "method": "POST",
-          "maxAmount": 0.1,
-          "url": "https://apollo.mpp.paywithlocus.com/apollo/people-enrichment",
-          "mode": "routed-mpp",
-          "reachable": true,
-          "livePriceUsd": 0.0399,
-          "withinCap": true,
-          "latencyMs": 599,
-          "error": null
-        },
-        {
-          "label": "find phone — Clado Contacts (MPP on Tempo)",
-          "rail": "MPP on Tempo",
-          "method": "POST",
-          "maxAmount": 0.5,
-          "url": "https://clado.mpp.paywithlocus.com/clado/contacts",
-          "mode": "routed-mpp",
-          "reachable": true,
-          "livePriceUsd": 0.04515,
-          "withinCap": true,
-          "latencyMs": 755,
-          "error": null
-        },
-        {
-          "label": "enrich company — Hunter Company Enrichment (MPP on Tempo)",
-          "rail": "MPP on Tempo",
-          "method": "POST",
-          "maxAmount": 0.15,
-          "url": "https://hunter.mpp.paywithlocus.com/hunter/company-enrichment",
-          "mode": "routed-mpp",
-          "reachable": true,
-          "livePriceUsd": 0.01365,
-          "withinCap": true,
-          "latencyMs": 574,
-          "error": null
-        }
-      ]
-    },
-    {
-      "name": "perplexity-search",
-      "rail": "routed",
-      "status": "ok",
-      "checkedAt": "2026-08-30T16:30:58.439Z",
-      "steps": [
-        {
-          "label": "web search — Perplexity /search (routed x402 via SELAT Router)",
-          "rail": "routed",
-          "method": "POST",
-          "maxAmount": 0.03,
-          "url": "https://pplx.x402.paysponge.com/search",
-          "mode": "routed-x402",
-          "reachable": true,
-          "livePriceUsd": 0.0105,
-          "withinCap": true,
-          "latencyMs": 1084,
-          "error": null
-        }
-      ]
-    },
-    {
-      "name": "person-lookup",
-      "rail": "MPP on Tempo",
-      "status": "ok",
-      "checkedAt": "2026-08-30T16:30:58.439Z",
-      "steps": [
-        {
-          "label": "person search — Clado (MPP on Tempo)",
-          "rail": "MPP on Tempo",
-          "method": "POST",
-          "maxAmount": 1,
-          "url": "https://clado.mpp.paywithlocus.com/clado/search",
-          "mode": "routed-mpp",
-          "reachable": true,
-          "livePriceUsd": 0.31815,
-          "withinCap": true,
-          "latencyMs": 575,
-          "error": null
-        }
-      ]
-    },
-    {
-      "name": "recent-funding-rounds",
-      "rail": "MPP on Tempo",
-      "status": "ok",
-      "checkedAt": "2026-08-30T16:30:58.439Z",
-      "steps": [
-        {
-          "label": "recent funding-round news — Brave Search (MPP on Tempo)",
-          "rail": "MPP on Tempo",
-          "method": "POST",
-          "maxAmount": 0.4,
-          "url": "https://brave.mpp.paywithlocus.com/brave/news-search",
-          "mode": "routed-mpp",
-          "reachable": true,
-          "livePriceUsd": 0.03675,
-          "withinCap": true,
-          "latencyMs": 723,
-          "error": null
-        }
-      ]
-    },
-    {
-      "name": "sales-prospecting",
-      "rail": "MPP on Tempo",
-      "status": "degraded",
-      "checkedAt": "2026-08-30T16:30:58.439Z",
-      "steps": [
-        {
-          "label": "all emails for domain — Hunter domain search (MPP on Tempo)",
-          "rail": "MPP on Tempo",
-          "method": "POST",
-          "maxAmount": 1,
-          "url": "https://hunter.mpp.paywithlocus.com/hunter/domain-search",
-          "mode": "routed-mpp",
-          "reachable": true,
-          "livePriceUsd": 0.10815,
-          "withinCap": true,
-          "latencyMs": 601,
-          "error": null
-        },
-        {
-          "label": "find specific contact email — Hunter email finder (MPP on Tempo)",
-          "rail": "MPP on Tempo",
-          "method": "POST",
-          "maxAmount": 0.15,
-          "url": "https://hunter.mpp.paywithlocus.com/hunter/email-finder",
-          "mode": "routed-mpp",
-          "reachable": true,
-          "livePriceUsd": 0.01365,
-          "withinCap": true,
-          "latencyMs": 592,
-          "error": null
-        },
-        {
-          "label": "verify email deliverability — Hunter email verifier (MPP on Tempo)",
-          "rail": "MPP on Tempo",
-          "method": "POST",
-          "maxAmount": 0.1,
-          "url": "https://hunter.mpp.paywithlocus.com/hunter/email-verifier",
-          "mode": "routed-mpp",
-          "reachable": true,
-          "livePriceUsd": 0.0084,
-          "withinCap": true,
-          "latencyMs": 585,
-          "error": null
-        },
-        {
-          "label": "enrich with company data — Abstract Company Enrichment lookup (MPP on Tempo)",
-          "rail": "MPP on Tempo",
-          "method": "POST",
-          "maxAmount": 0.1,
-          "url": "https://abstract-company-enrichment.mpp.paywithlocus.com/abstract-company-enrichment/lookup",
-          "mode": null,
-          "reachable": false,
-          "livePriceUsd": null,
-          "withinCap": false,
-          "latencyMs": 665,
-          "error": "no x402 or MPP challenge detected at https://abstract-company-enrichment.mpp.paywithlocus.com/abstract-company-enrichment/lookup"
-        }
-      ]
-    },
-    {
-      "name": "scrapecreators",
-      "rail": "mixed",
-      "status": "ok",
-      "checkedAt": "2026-08-30T16:30:58.439Z",
-      "steps": [
-        {
-          "label": "X/Twitter profile — SELAT Twitter API (x402 via Circle Gateway)",
-          "rail": "x402 via Circle Gateway",
-          "method": "GET",
-          "maxAmount": 0.1,
-          "url": "https://catalog.selat.ai/twitter/user/info?userName=openai",
-          "mode": "direct",
-          "reachable": true,
-          "livePriceUsd": 0.001,
-          "withinCap": true,
-          "latencyMs": 365,
-          "error": null
-        },
-        {
-          "label": "X/Twitter user tweets — SELAT Twitter API (x402 via Circle Gateway)",
-          "rail": "x402 via Circle Gateway",
-          "method": "GET",
-          "maxAmount": 0.1,
-          "url": "https://catalog.selat.ai/twitter/user/last_tweets?userName=openai",
-          "mode": "direct",
-          "reachable": true,
-          "livePriceUsd": 0.001,
-          "withinCap": true,
-          "latencyMs": 355,
-          "error": null
-        },
-        {
-          "label": "X/Twitter tweet details — SELAT Twitter API (x402 via Circle Gateway)",
-          "rail": "x402 via Circle Gateway",
-          "method": "GET",
-          "maxAmount": 0.1,
-          "url": "https://catalog.selat.ai/twitter/tweets?tweet_ids=1234567890123456789",
-          "mode": "direct",
-          "reachable": true,
-          "livePriceUsd": 0.001,
-          "withinCap": true,
-          "latencyMs": 368,
-          "error": null
-        },
-        {
-          "label": "LinkedIn profile — Clado (MPP on Tempo)",
+          "label": "person resolve by LinkedIn URL — Clado LinkedIn profile (MPP on Tempo)",
           "rail": "MPP on Tempo",
           "method": "POST",
           "maxAmount": 0.15,
@@ -1256,11 +422,102 @@
           "reachable": true,
           "livePriceUsd": 0.01365,
           "withinCap": true,
-          "latencyMs": 743,
+          "latencyMs": 886,
           "error": null
         },
         {
-          "label": "LinkedIn post — Clado scrape (MPP on Tempo)",
+          "label": "person+company resolve by email — Hunter combined enrichment (MPP on Tempo)",
+          "rail": "MPP on Tempo",
+          "method": "POST",
+          "maxAmount": 0.25,
+          "url": "https://hunter.mpp.paywithlocus.com/hunter/combined-enrichment",
+          "mode": "routed-mpp",
+          "reachable": true,
+          "livePriceUsd": 0.02415,
+          "withinCap": true,
+          "latencyMs": 741,
+          "error": null
+        },
+        {
+          "label": "company anchor (no domain) — Apollo org search by name (MPP on Tempo)",
+          "rail": "MPP on Tempo",
+          "method": "POST",
+          "maxAmount": 0.1,
+          "url": "https://apollo.mpp.paywithlocus.com/apollo/org-search",
+          "mode": "routed-mpp",
+          "reachable": true,
+          "livePriceUsd": 0.00525,
+          "withinCap": true,
+          "latencyMs": 752,
+          "error": null
+        },
+        {
+          "label": "company anchor — Abstract Company Enrichment lookup by domain (MPP on Tempo)",
+          "rail": "MPP on Tempo",
+          "method": "POST",
+          "maxAmount": 0.1,
+          "url": "https://abstract-company-enrichment.mpp.paywithlocus.com/abstract-company-enrichment/lookup",
+          "mode": null,
+          "reachable": false,
+          "livePriceUsd": null,
+          "withinCap": false,
+          "latencyMs": 700,
+          "error": "no x402 or MPP challenge detected at https://abstract-company-enrichment.mpp.paywithlocus.com/abstract-company-enrichment/lookup"
+        },
+        {
+          "label": "company anchor + tech + headcount — Apollo org enrichment by domain (MPP on Tempo)",
+          "rail": "MPP on Tempo",
+          "method": "POST",
+          "maxAmount": 0.1,
+          "url": "https://apollo.mpp.paywithlocus.com/apollo/org-enrichment",
+          "mode": "routed-mpp",
+          "reachable": true,
+          "livePriceUsd": 0.0399,
+          "withinCap": true,
+          "latencyMs": 746,
+          "error": null
+        },
+        {
+          "label": "company anchor — Hunter company enrichment by domain (MPP on Tempo)",
+          "rail": "MPP on Tempo",
+          "method": "POST",
+          "maxAmount": 0.15,
+          "url": "https://hunter.mpp.paywithlocus.com/hunter/company-enrichment",
+          "mode": "routed-mpp",
+          "reachable": true,
+          "livePriceUsd": 0.01365,
+          "withinCap": true,
+          "latencyMs": 724,
+          "error": null
+        },
+        {
+          "label": "email find by name — Hunter email-finder (MPP on Tempo)",
+          "rail": "MPP on Tempo",
+          "method": "POST",
+          "maxAmount": 0.15,
+          "url": "https://hunter.mpp.paywithlocus.com/hunter/email-finder",
+          "mode": "routed-mpp",
+          "reachable": true,
+          "livePriceUsd": 0.01365,
+          "withinCap": true,
+          "latencyMs": 746,
+          "error": null
+        },
+        {
+          "label": "X/Twitter profile — SELAT user info (x402 via Circle Gateway)",
+          "rail": "x402 via Circle Gateway",
+          "method": "GET",
+          "maxAmount": 0.1,
+          "url": "https://catalog.selat.ai/twitter/user/info?userName=John%20Doe",
+          "mode": "direct",
+          "reachable": true,
+          "livePriceUsd": 0.001,
+          "withinCap": true,
+          "latencyMs": 623,
+          "error": null
+        },
+        {
+          "label": "LinkedIn person/company posts — Clado scrape (MPP on Tempo)",
           "rail": "MPP on Tempo",
           "method": "POST",
           "maxAmount": 0.25,
@@ -1269,20 +526,7 @@
           "reachable": true,
           "livePriceUsd": 0.02415,
           "withinCap": true,
-          "latencyMs": 577,
-          "error": null
-        },
-        {
-          "label": "LinkedIn company page — Clado scrape (MPP on Tempo)",
-          "rail": "MPP on Tempo",
-          "method": "POST",
-          "maxAmount": 0.25,
-          "url": "https://clado.mpp.paywithlocus.com/clado/scrape",
-          "mode": "routed-mpp",
-          "reachable": true,
-          "livePriceUsd": 0.02415,
-          "withinCap": true,
-          "latencyMs": 574,
+          "latencyMs": 882,
           "error": null
         },
         {
@@ -1295,33 +539,7 @@
           "reachable": true,
           "livePriceUsd": 0.063,
           "withinCap": true,
-          "latencyMs": 653,
-          "error": null
-        },
-        {
-          "label": "Instagram profile by handle — StableSocial (MPP on Tempo)",
-          "rail": "MPP on Tempo",
-          "method": "POST",
-          "maxAmount": 0.75,
-          "url": "https://stablesocial.dev/api/instagram/profile",
-          "mode": "routed-mpp",
-          "reachable": true,
-          "livePriceUsd": 0.063,
-          "withinCap": true,
-          "latencyMs": 646,
-          "error": null
-        },
-        {
-          "label": "Instagram recent posts — StableSocial (MPP on Tempo)",
-          "rail": "MPP on Tempo",
-          "method": "POST",
-          "maxAmount": 0.75,
-          "url": "https://stablesocial.dev/api/instagram/posts",
-          "mode": "routed-mpp",
-          "reachable": true,
-          "livePriceUsd": 0.063,
-          "withinCap": true,
-          "latencyMs": 684,
+          "latencyMs": 1022,
           "error": null
         },
         {
@@ -1334,7 +552,789 @@
           "reachable": true,
           "livePriceUsd": 0.063,
           "withinCap": true,
-          "latencyMs": 596,
+          "latencyMs": 934,
+          "error": null
+        },
+        {
+          "label": "job openings / hiring signals — Apollo job postings by org id (MPP on Tempo)",
+          "rail": "MPP on Tempo",
+          "method": "POST",
+          "maxAmount": 0.1,
+          "url": "https://apollo.mpp.paywithlocus.com/apollo/job-postings",
+          "mode": "routed-mpp",
+          "reachable": true,
+          "livePriceUsd": 0.00525,
+          "withinCap": true,
+          "latencyMs": 912,
+          "error": null
+        },
+        {
+          "label": "news events — Brave news search for company (MPP on Tempo)",
+          "rail": "MPP on Tempo",
+          "method": "POST",
+          "maxAmount": 0.4,
+          "url": "https://brave.mpp.paywithlocus.com/brave/news-search",
+          "mode": "routed-mpp",
+          "reachable": true,
+          "livePriceUsd": 0.03675,
+          "withinCap": true,
+          "latencyMs": 886,
+          "error": null
+        },
+        {
+          "label": "financing events — Brave news search for funding rounds (MPP on Tempo)",
+          "rail": "MPP on Tempo",
+          "method": "POST",
+          "maxAmount": 0.4,
+          "url": "https://brave.mpp.paywithlocus.com/brave/news-search",
+          "mode": "routed-mpp",
+          "reachable": true,
+          "livePriceUsd": 0.03675,
+          "withinCap": true,
+          "latencyMs": 743,
+          "error": null
+        },
+        {
+          "label": "business connections / KG record — Diffbot Knowledge Graph enhance (MPP on Tempo)",
+          "rail": "MPP on Tempo",
+          "method": "POST",
+          "maxAmount": 0.4,
+          "url": "https://diffbot-kg.mpp.paywithlocus.com/diffbot-kg/enhance",
+          "mode": "routed-mpp",
+          "reachable": true,
+          "livePriceUsd": 0.03675,
+          "withinCap": true,
+          "latencyMs": 886,
+          "error": null
+        },
+        {
+          "label": "contact reveal (email + phone) from LinkedIn — Clado contacts (MPP on Tempo)",
+          "rail": "MPP on Tempo",
+          "method": "POST",
+          "maxAmount": 0.5,
+          "url": "https://clado.mpp.paywithlocus.com/clado/contacts",
+          "mode": "routed-mpp",
+          "reachable": true,
+          "livePriceUsd": 0.04515,
+          "withinCap": true,
+          "latencyMs": 909,
+          "error": null
+        },
+        {
+          "label": "person search by handle / natural language — Clado search (MPP on Tempo)",
+          "rail": "MPP on Tempo",
+          "method": "POST",
+          "maxAmount": 1,
+          "url": "https://clado.mpp.paywithlocus.com/clado/search",
+          "mode": "routed-mpp",
+          "reachable": true,
+          "livePriceUsd": 0.31815,
+          "withinCap": true,
+          "latencyMs": 718,
+          "error": null
+        },
+        {
+          "label": "email verify — Hunter email-verifier (MPP on Tempo)",
+          "rail": "MPP on Tempo",
+          "method": "POST",
+          "maxAmount": 0.1,
+          "url": "https://hunter.mpp.paywithlocus.com/hunter/email-verifier",
+          "mode": "routed-mpp",
+          "reachable": true,
+          "livePriceUsd": 0.0084,
+          "withinCap": true,
+          "latencyMs": 915,
+          "error": null
+        }
+      ]
+    },
+    {
+      "name": "financial-intel",
+      "rail": "mixed",
+      "status": "ok",
+      "checkedAt": "2026-08-30T20:53:40.862Z",
+      "steps": [
+        {
+          "label": "spot price — Alchemy (x402 via Circle Gateway)",
+          "rail": "x402 via Circle Gateway",
+          "method": "GET",
+          "maxAmount": 0.01,
+          "url": "https://x402.alchemy.com/prices/v1/tokens/by-symbol?symbols=ETH",
+          "mode": "direct",
+          "reachable": true,
+          "livePriceUsd": 0.001,
+          "withinCap": true,
+          "latencyMs": 685,
+          "error": null
+        },
+        {
+          "label": "token market data — CoinGecko coins-markets (MPP on Tempo)",
+          "rail": "MPP on Tempo",
+          "method": "POST",
+          "maxAmount": 0.1,
+          "url": "https://coingecko.mpp.paywithlocus.com/coingecko/coins-markets",
+          "mode": "routed-mpp",
+          "reachable": true,
+          "livePriceUsd": 0.063,
+          "withinCap": true,
+          "latencyMs": 988,
+          "error": null
+        },
+        {
+          "label": "equities / macro quote — Alpha Vantage global-quote (MPP on Tempo)",
+          "rail": "MPP on Tempo",
+          "method": "POST",
+          "maxAmount": 0.05,
+          "url": "https://alphavantage.mpp.paywithlocus.com/alphavantage/global-quote",
+          "mode": "routed-mpp",
+          "reachable": true,
+          "livePriceUsd": 0.0084,
+          "withinCap": true,
+          "latencyMs": 1068,
+          "error": null
+        },
+        {
+          "label": "on-chain smart-money holdings — Nansen (MPP on Tempo)",
+          "rail": "MPP on Tempo",
+          "method": "POST",
+          "maxAmount": 0.1,
+          "url": "https://api.nansen.ai/api/v1/smart-money/holdings",
+          "mode": "routed-mpp",
+          "reachable": true,
+          "livePriceUsd": 0.0525,
+          "withinCap": true,
+          "latencyMs": 1188,
+          "error": null
+        },
+        {
+          "label": "fundamentals / funding rounds — Messari (x402 on Base)",
+          "rail": "x402 on Base",
+          "method": "GET",
+          "maxAmount": 0.25,
+          "url": "https://api.messari.io/funding/v1/rounds",
+          "mode": "routed-x402",
+          "reachable": true,
+          "livePriceUsd": 0.1575,
+          "withinCap": true,
+          "latencyMs": 971,
+          "error": null
+        },
+        {
+          "label": "market news / context — Exa search (MPP on Tempo)",
+          "rail": "MPP on Tempo",
+          "method": "POST",
+          "maxAmount": 0.05,
+          "url": "https://api.exa.ai/search",
+          "mode": "routed-mpp",
+          "reachable": true,
+          "livePriceUsd": 0.00735,
+          "withinCap": true,
+          "latencyMs": 787,
+          "error": null
+        }
+      ]
+    },
+    {
+      "name": "find-twitter-influencers",
+      "rail": "mixed",
+      "status": "degraded",
+      "checkedAt": "2026-08-30T20:53:40.862Z",
+      "steps": [
+        {
+          "label": "resolve company by name — Apollo org search (MPP on Tempo)",
+          "rail": "MPP on Tempo",
+          "method": "POST",
+          "maxAmount": 0.1,
+          "url": "https://apollo.mpp.paywithlocus.com/apollo/org-search",
+          "mode": "routed-mpp",
+          "reachable": true,
+          "livePriceUsd": 0.00525,
+          "withinCap": true,
+          "latencyMs": 880,
+          "error": null
+        },
+        {
+          "label": "resolve company by domain — Abstract Company Enrichment (MPP on Tempo)",
+          "rail": "MPP on Tempo",
+          "method": "POST",
+          "maxAmount": 0.1,
+          "url": "https://abstract-company-enrichment.mpp.paywithlocus.com/abstract-company-enrichment/lookup",
+          "mode": null,
+          "reachable": false,
+          "livePriceUsd": null,
+          "withinCap": false,
+          "latencyMs": 705,
+          "error": "no x402 or MPP challenge detected at https://abstract-company-enrichment.mpp.paywithlocus.com/abstract-company-enrichment/lookup"
+        },
+        {
+          "label": "discover curated influencer listicles — Exa search (MPP on Tempo)",
+          "rail": "MPP on Tempo",
+          "method": "POST",
+          "maxAmount": 0.1,
+          "url": "https://exa.mpp.tempo.xyz/search",
+          "mode": "routed-mpp",
+          "reachable": true,
+          "livePriceUsd": 0.00525,
+          "withinCap": true,
+          "latencyMs": 1027,
+          "error": null
+        },
+        {
+          "label": "expand from a strong listicle — Exa findSimilar (MPP on Tempo)",
+          "rail": "MPP on Tempo",
+          "method": "POST",
+          "maxAmount": 0.1,
+          "url": "https://exa.mpp.tempo.xyz/findSimilar",
+          "mode": "routed-mpp",
+          "reachable": true,
+          "livePriceUsd": 0.00525,
+          "withinCap": true,
+          "latencyMs": 1188,
+          "error": null
+        },
+        {
+          "label": "fetch Twitter profile + counts — SELAT Twitter API (x402 via Circle Gateway)",
+          "rail": "x402 via Circle Gateway",
+          "method": "GET",
+          "maxAmount": 0.1,
+          "url": "https://catalog.selat.ai/twitter/user/info?userName=examplehandle",
+          "mode": "direct",
+          "reachable": true,
+          "livePriceUsd": 0.001,
+          "withinCap": true,
+          "latencyMs": 581,
+          "error": null
+        },
+        {
+          "label": "fetch top tweets + engagement — SELAT Twitter API (x402 via Circle Gateway)",
+          "rail": "x402 via Circle Gateway",
+          "method": "GET",
+          "maxAmount": 0.1,
+          "url": "https://catalog.selat.ai/twitter/user/last_tweets?userName=examplehandle",
+          "mode": "direct",
+          "reachable": true,
+          "livePriceUsd": 0.001,
+          "withinCap": true,
+          "latencyMs": 568,
+          "error": null
+        },
+        {
+          "label": "find email by name + domain — Hunter email-finder (MPP on Tempo)",
+          "rail": "MPP on Tempo",
+          "method": "POST",
+          "maxAmount": 0.15,
+          "url": "https://hunter.mpp.paywithlocus.com/hunter/email-finder",
+          "mode": "routed-mpp",
+          "reachable": true,
+          "livePriceUsd": 0.01365,
+          "withinCap": true,
+          "latencyMs": 910,
+          "error": null
+        },
+        {
+          "label": "LinkedIn-to-contact (email + phone) — Clado contacts (MPP on Tempo)",
+          "rail": "MPP on Tempo",
+          "method": "POST",
+          "maxAmount": 0.5,
+          "url": "https://clado.mpp.paywithlocus.com/clado/contacts",
+          "mode": "routed-mpp",
+          "reachable": true,
+          "livePriceUsd": 0.04515,
+          "withinCap": true,
+          "latencyMs": 889,
+          "error": null
+        }
+      ]
+    },
+    {
+      "name": "gtm-enrichment-deep",
+      "rail": "MPP on Tempo",
+      "status": "ok",
+      "checkedAt": "2026-08-30T20:53:40.862Z",
+      "steps": [
+        {
+          "label": "enrich person — Apollo (MPP on Tempo)",
+          "rail": "MPP on Tempo",
+          "method": "POST",
+          "maxAmount": 0.1,
+          "url": "https://apollo.mpp.paywithlocus.com/apollo/people-enrichment",
+          "mode": "routed-mpp",
+          "reachable": true,
+          "livePriceUsd": 0.0399,
+          "withinCap": true,
+          "latencyMs": 904,
+          "error": null
+        },
+        {
+          "label": "enrich company — Hunter (MPP on Tempo)",
+          "rail": "MPP on Tempo",
+          "method": "POST",
+          "maxAmount": 0.15,
+          "url": "https://hunter.mpp.paywithlocus.com/hunter/company-enrichment",
+          "mode": "routed-mpp",
+          "reachable": true,
+          "livePriceUsd": 0.01365,
+          "withinCap": true,
+          "latencyMs": 756,
+          "error": null
+        },
+        {
+          "label": "fallback org enrich — Apollo (MPP on Tempo) — run only if Hunter returned no funding data",
+          "rail": "MPP on Tempo",
+          "method": "POST",
+          "maxAmount": 0.1,
+          "url": "https://apollo.mpp.paywithlocus.com/apollo/org-enrichment",
+          "mode": "routed-mpp",
+          "reachable": true,
+          "livePriceUsd": 0.0399,
+          "withinCap": true,
+          "latencyMs": 720,
+          "error": null
+        }
+      ]
+    },
+    {
+      "name": "gtm-enrichment-smart",
+      "rail": "mixed",
+      "status": "degraded",
+      "checkedAt": "2026-08-30T20:53:40.862Z",
+      "steps": [
+        {
+          "label": "person enrich — Apollo people-enrichment (MPP on Tempo)",
+          "rail": "MPP on Tempo",
+          "method": "POST",
+          "maxAmount": 0.1,
+          "url": "https://apollo.mpp.paywithlocus.com/apollo/people-enrichment",
+          "mode": "routed-mpp",
+          "reachable": true,
+          "livePriceUsd": 0.0399,
+          "withinCap": true,
+          "latencyMs": 780,
+          "error": null
+        },
+        {
+          "label": "person + company combined — Hunter combined-enrichment (MPP on Tempo)",
+          "rail": "MPP on Tempo",
+          "method": "POST",
+          "maxAmount": 0.25,
+          "url": "https://hunter.mpp.paywithlocus.com/hunter/combined-enrichment",
+          "mode": "routed-mpp",
+          "reachable": true,
+          "livePriceUsd": 0.02415,
+          "withinCap": true,
+          "latencyMs": 764,
+          "error": null
+        },
+        {
+          "label": "email deliverability — Hunter email-verifier (MPP on Tempo)",
+          "rail": "MPP on Tempo",
+          "method": "POST",
+          "maxAmount": 0.1,
+          "url": "https://hunter.mpp.paywithlocus.com/hunter/email-verifier",
+          "mode": "routed-mpp",
+          "reachable": true,
+          "livePriceUsd": 0.0084,
+          "withinCap": true,
+          "latencyMs": 745,
+          "error": null
+        },
+        {
+          "label": "company brand — Abstract Company Enrichment lookup (MPP on Tempo; skip for free email)",
+          "rail": "MPP on Tempo",
+          "method": "POST",
+          "maxAmount": 0.1,
+          "url": "https://abstract-company-enrichment.mpp.paywithlocus.com/abstract-company-enrichment/lookup",
+          "mode": null,
+          "reachable": false,
+          "livePriceUsd": null,
+          "withinCap": false,
+          "latencyMs": 694,
+          "error": "no x402 or MPP challenge detected at https://abstract-company-enrichment.mpp.paywithlocus.com/abstract-company-enrichment/lookup"
+        },
+        {
+          "label": "company gap-fill — Apollo org-enrichment (MPP on Tempo; only if funding missing)",
+          "rail": "MPP on Tempo",
+          "method": "POST",
+          "maxAmount": 0.1,
+          "url": "https://apollo.mpp.paywithlocus.com/apollo/org-enrichment",
+          "mode": "routed-mpp",
+          "reachable": true,
+          "livePriceUsd": 0.0399,
+          "withinCap": true,
+          "latencyMs": 715,
+          "error": null
+        },
+        {
+          "label": "person tie-breaker — Hunter email-enrichment (MPP on Tempo; only if sources conflict)",
+          "rail": "MPP on Tempo",
+          "method": "POST",
+          "maxAmount": 0.15,
+          "url": "https://hunter.mpp.paywithlocus.com/hunter/email-enrichment",
+          "mode": "routed-mpp",
+          "reachable": true,
+          "livePriceUsd": 0.01365,
+          "withinCap": true,
+          "latencyMs": 761,
+          "error": null
+        },
+        {
+          "label": "company fallback — Hunter company-enrichment (MPP on Tempo; only if major gaps + >500 employees)",
+          "rail": "MPP on Tempo",
+          "method": "POST",
+          "maxAmount": 0.15,
+          "url": "https://hunter.mpp.paywithlocus.com/hunter/company-enrichment",
+          "mode": "routed-mpp",
+          "reachable": true,
+          "livePriceUsd": 0.01365,
+          "withinCap": true,
+          "latencyMs": 751,
+          "error": null
+        },
+        {
+          "label": "social proof — SELAT Twitter user-info API (x402 via Circle Gateway; only if Twitter handle found)",
+          "rail": "x402 via Circle Gateway",
+          "method": "GET",
+          "maxAmount": 0.1,
+          "url": "https://catalog.selat.ai/twitter/user/info?userName=elonmusk",
+          "mode": "direct",
+          "reachable": true,
+          "livePriceUsd": 0.001,
+          "withinCap": true,
+          "latencyMs": 575,
+          "error": null
+        }
+      ]
+    },
+    {
+      "name": "lead-enrichment",
+      "rail": "MPP on Tempo",
+      "status": "ok",
+      "checkedAt": "2026-08-30T20:53:40.862Z",
+      "steps": [
+        {
+          "label": "find email — Hunter Email Finder (MPP on Tempo)",
+          "rail": "MPP on Tempo",
+          "method": "POST",
+          "maxAmount": 0.15,
+          "url": "https://hunter.mpp.paywithlocus.com/hunter/email-finder",
+          "mode": "routed-mpp",
+          "reachable": true,
+          "livePriceUsd": 0.01365,
+          "withinCap": true,
+          "latencyMs": 724,
+          "error": null
+        },
+        {
+          "label": "verify email — Hunter Email Verifier (MPP on Tempo)",
+          "rail": "MPP on Tempo",
+          "method": "POST",
+          "maxAmount": 0.1,
+          "url": "https://hunter.mpp.paywithlocus.com/hunter/email-verifier",
+          "mode": "routed-mpp",
+          "reachable": true,
+          "livePriceUsd": 0.0084,
+          "withinCap": true,
+          "latencyMs": 739,
+          "error": null
+        },
+        {
+          "label": "enrich lead — Apollo People Enrichment (MPP on Tempo)",
+          "rail": "MPP on Tempo",
+          "method": "POST",
+          "maxAmount": 0.1,
+          "url": "https://apollo.mpp.paywithlocus.com/apollo/people-enrichment",
+          "mode": "routed-mpp",
+          "reachable": true,
+          "livePriceUsd": 0.0399,
+          "withinCap": true,
+          "latencyMs": 1072,
+          "error": null
+        },
+        {
+          "label": "find phone — Clado Contacts (MPP on Tempo)",
+          "rail": "MPP on Tempo",
+          "method": "POST",
+          "maxAmount": 0.5,
+          "url": "https://clado.mpp.paywithlocus.com/clado/contacts",
+          "mode": "routed-mpp",
+          "reachable": true,
+          "livePriceUsd": 0.04515,
+          "withinCap": true,
+          "latencyMs": 890,
+          "error": null
+        },
+        {
+          "label": "enrich company — Hunter Company Enrichment (MPP on Tempo)",
+          "rail": "MPP on Tempo",
+          "method": "POST",
+          "maxAmount": 0.15,
+          "url": "https://hunter.mpp.paywithlocus.com/hunter/company-enrichment",
+          "mode": "routed-mpp",
+          "reachable": true,
+          "livePriceUsd": 0.01365,
+          "withinCap": true,
+          "latencyMs": 741,
+          "error": null
+        }
+      ]
+    },
+    {
+      "name": "perplexity-search",
+      "rail": "routed",
+      "status": "ok",
+      "checkedAt": "2026-08-30T20:53:40.862Z",
+      "steps": [
+        {
+          "label": "web search — Perplexity /search (routed x402 via SELAT Router)",
+          "rail": "routed",
+          "method": "POST",
+          "maxAmount": 0.03,
+          "url": "https://pplx.x402.paysponge.com/search",
+          "mode": "routed-x402",
+          "reachable": true,
+          "livePriceUsd": 0.0105,
+          "withinCap": true,
+          "latencyMs": 1301,
+          "error": null
+        }
+      ]
+    },
+    {
+      "name": "person-lookup",
+      "rail": "MPP on Tempo",
+      "status": "ok",
+      "checkedAt": "2026-08-30T20:53:40.862Z",
+      "steps": [
+        {
+          "label": "person search — Clado (MPP on Tempo)",
+          "rail": "MPP on Tempo",
+          "method": "POST",
+          "maxAmount": 1,
+          "url": "https://clado.mpp.paywithlocus.com/clado/search",
+          "mode": "routed-mpp",
+          "reachable": true,
+          "livePriceUsd": 0.31815,
+          "withinCap": true,
+          "latencyMs": 724,
+          "error": null
+        }
+      ]
+    },
+    {
+      "name": "recent-funding-rounds",
+      "rail": "MPP on Tempo",
+      "status": "ok",
+      "checkedAt": "2026-08-30T20:53:40.862Z",
+      "steps": [
+        {
+          "label": "recent funding-round news — Brave Search (MPP on Tempo)",
+          "rail": "MPP on Tempo",
+          "method": "POST",
+          "maxAmount": 0.4,
+          "url": "https://brave.mpp.paywithlocus.com/brave/news-search",
+          "mode": "routed-mpp",
+          "reachable": true,
+          "livePriceUsd": 0.03675,
+          "withinCap": true,
+          "latencyMs": 974,
+          "error": null
+        }
+      ]
+    },
+    {
+      "name": "sales-prospecting",
+      "rail": "MPP on Tempo",
+      "status": "degraded",
+      "checkedAt": "2026-08-30T20:53:40.862Z",
+      "steps": [
+        {
+          "label": "all emails for domain — Hunter domain search (MPP on Tempo)",
+          "rail": "MPP on Tempo",
+          "method": "POST",
+          "maxAmount": 1,
+          "url": "https://hunter.mpp.paywithlocus.com/hunter/domain-search",
+          "mode": "routed-mpp",
+          "reachable": true,
+          "livePriceUsd": 0.10815,
+          "withinCap": true,
+          "latencyMs": 750,
+          "error": null
+        },
+        {
+          "label": "find specific contact email — Hunter email finder (MPP on Tempo)",
+          "rail": "MPP on Tempo",
+          "method": "POST",
+          "maxAmount": 0.15,
+          "url": "https://hunter.mpp.paywithlocus.com/hunter/email-finder",
+          "mode": "routed-mpp",
+          "reachable": true,
+          "livePriceUsd": 0.01365,
+          "withinCap": true,
+          "latencyMs": 726,
+          "error": null
+        },
+        {
+          "label": "verify email deliverability — Hunter email verifier (MPP on Tempo)",
+          "rail": "MPP on Tempo",
+          "method": "POST",
+          "maxAmount": 0.1,
+          "url": "https://hunter.mpp.paywithlocus.com/hunter/email-verifier",
+          "mode": "routed-mpp",
+          "reachable": true,
+          "livePriceUsd": 0.0084,
+          "withinCap": true,
+          "latencyMs": 830,
+          "error": null
+        },
+        {
+          "label": "enrich with company data — Abstract Company Enrichment lookup (MPP on Tempo)",
+          "rail": "MPP on Tempo",
+          "method": "POST",
+          "maxAmount": 0.1,
+          "url": "https://abstract-company-enrichment.mpp.paywithlocus.com/abstract-company-enrichment/lookup",
+          "mode": null,
+          "reachable": false,
+          "livePriceUsd": null,
+          "withinCap": false,
+          "latencyMs": 745,
+          "error": "no x402 or MPP challenge detected at https://abstract-company-enrichment.mpp.paywithlocus.com/abstract-company-enrichment/lookup"
+        }
+      ]
+    },
+    {
+      "name": "scrapecreators",
+      "rail": "mixed",
+      "status": "ok",
+      "checkedAt": "2026-08-30T20:53:40.862Z",
+      "steps": [
+        {
+          "label": "X/Twitter profile — SELAT Twitter API (x402 via Circle Gateway)",
+          "rail": "x402 via Circle Gateway",
+          "method": "GET",
+          "maxAmount": 0.1,
+          "url": "https://catalog.selat.ai/twitter/user/info?userName=openai",
+          "mode": "direct",
+          "reachable": true,
+          "livePriceUsd": 0.001,
+          "withinCap": true,
+          "latencyMs": 840,
+          "error": null
+        },
+        {
+          "label": "X/Twitter user tweets — SELAT Twitter API (x402 via Circle Gateway)",
+          "rail": "x402 via Circle Gateway",
+          "method": "GET",
+          "maxAmount": 0.1,
+          "url": "https://catalog.selat.ai/twitter/user/last_tweets?userName=openai",
+          "mode": "direct",
+          "reachable": true,
+          "livePriceUsd": 0.001,
+          "withinCap": true,
+          "latencyMs": 547,
+          "error": null
+        },
+        {
+          "label": "X/Twitter tweet details — SELAT Twitter API (x402 via Circle Gateway)",
+          "rail": "x402 via Circle Gateway",
+          "method": "GET",
+          "maxAmount": 0.1,
+          "url": "https://catalog.selat.ai/twitter/tweets?tweet_ids=1234567890123456789",
+          "mode": "direct",
+          "reachable": true,
+          "livePriceUsd": 0.001,
+          "withinCap": true,
+          "latencyMs": 556,
+          "error": null
+        },
+        {
+          "label": "LinkedIn profile — Clado (MPP on Tempo)",
+          "rail": "MPP on Tempo",
+          "method": "POST",
+          "maxAmount": 0.15,
+          "url": "https://clado.mpp.paywithlocus.com/clado/linkedin-profile",
+          "mode": "routed-mpp",
+          "reachable": true,
+          "livePriceUsd": 0.01365,
+          "withinCap": true,
+          "latencyMs": 995,
+          "error": null
+        },
+        {
+          "label": "LinkedIn post — Clado scrape (MPP on Tempo)",
+          "rail": "MPP on Tempo",
+          "method": "POST",
+          "maxAmount": 0.25,
+          "url": "https://clado.mpp.paywithlocus.com/clado/scrape",
+          "mode": "routed-mpp",
+          "reachable": true,
+          "livePriceUsd": 0.02415,
+          "withinCap": true,
+          "latencyMs": 779,
+          "error": null
+        },
+        {
+          "label": "LinkedIn company page — Clado scrape (MPP on Tempo)",
+          "rail": "MPP on Tempo",
+          "method": "POST",
+          "maxAmount": 0.25,
+          "url": "https://clado.mpp.paywithlocus.com/clado/scrape",
+          "mode": "routed-mpp",
+          "reachable": true,
+          "livePriceUsd": 0.02415,
+          "withinCap": true,
+          "latencyMs": 742,
+          "error": null
+        },
+        {
+          "label": "Instagram profile — StableSocial (MPP on Tempo)",
+          "rail": "MPP on Tempo",
+          "method": "POST",
+          "maxAmount": 0.75,
+          "url": "https://stablesocial.dev/api/instagram/profile",
+          "mode": "routed-mpp",
+          "reachable": true,
+          "livePriceUsd": 0.063,
+          "withinCap": true,
+          "latencyMs": 944,
+          "error": null
+        },
+        {
+          "label": "Instagram profile by handle — StableSocial (MPP on Tempo)",
+          "rail": "MPP on Tempo",
+          "method": "POST",
+          "maxAmount": 0.75,
+          "url": "https://stablesocial.dev/api/instagram/profile",
+          "mode": "routed-mpp",
+          "reachable": true,
+          "livePriceUsd": 0.063,
+          "withinCap": true,
+          "latencyMs": 900,
+          "error": null
+        },
+        {
+          "label": "Instagram recent posts — StableSocial (MPP on Tempo)",
+          "rail": "MPP on Tempo",
+          "method": "POST",
+          "maxAmount": 0.75,
+          "url": "https://stablesocial.dev/api/instagram/posts",
+          "mode": "routed-mpp",
+          "reachable": true,
+          "livePriceUsd": 0.063,
+          "withinCap": true,
+          "latencyMs": 917,
+          "error": null
+        },
+        {
+          "label": "TikTok profile — StableSocial (MPP on Tempo)",
+          "rail": "MPP on Tempo",
+          "method": "POST",
+          "maxAmount": 0.75,
+          "url": "https://stablesocial.dev/api/tiktok/profile",
+          "mode": "routed-mpp",
+          "reachable": true,
+          "livePriceUsd": 0.063,
+          "withinCap": true,
+          "latencyMs": 875,
           "error": null
         },
         {
@@ -1347,7 +1347,7 @@
           "reachable": true,
           "livePriceUsd": 0.063,
           "withinCap": true,
-          "latencyMs": 600,
+          "latencyMs": 942,
           "error": null
         },
         {
@@ -1360,7 +1360,7 @@
           "reachable": true,
           "livePriceUsd": 0.063,
           "withinCap": true,
-          "latencyMs": 913,
+          "latencyMs": 917,
           "error": null
         }
       ]
@@ -1369,7 +1369,7 @@
       "name": "self-evolving-agent",
       "rail": "mixed",
       "status": "ok",
-      "checkedAt": "2026-08-30T16:30:58.439Z",
+      "checkedAt": "2026-08-30T20:53:40.862Z",
       "steps": [
         {
           "label": "Social alpha - Otto KOL sentiment",
@@ -1381,7 +1381,7 @@
           "reachable": true,
           "livePriceUsd": 0.00315,
           "withinCap": true,
-          "latencyMs": 1214,
+          "latencyMs": 1791,
           "error": null
         },
         {
@@ -1394,7 +1394,7 @@
           "reachable": true,
           "livePriceUsd": 0.00105,
           "withinCap": true,
-          "latencyMs": 930,
+          "latencyMs": 1343,
           "error": null
         },
         {
@@ -1407,7 +1407,7 @@
           "reachable": true,
           "livePriceUsd": 0.0105,
           "withinCap": true,
-          "latencyMs": 1000,
+          "latencyMs": 1385,
           "error": null
         }
       ]
@@ -1416,7 +1416,7 @@
       "name": "social-intel",
       "rail": "mixed",
       "status": "degraded",
-      "checkedAt": "2026-08-30T16:30:58.439Z",
+      "checkedAt": "2026-08-30T20:53:40.862Z",
       "steps": [
         {
           "label": "web context — Exa search (MPP on Tempo)",
@@ -1428,7 +1428,7 @@
           "reachable": true,
           "livePriceUsd": 0.00735,
           "withinCap": true,
-          "latencyMs": 592,
+          "latencyMs": 854,
           "error": null
         },
         {
@@ -1441,7 +1441,7 @@
           "reachable": false,
           "livePriceUsd": null,
           "withinCap": false,
-          "latencyMs": 2981,
+          "latencyMs": 3342,
           "error": "Cannot convert 0.016 to a BigInt"
         }
       ]
@@ -1450,7 +1450,7 @@
       "name": "twitter-research",
       "rail": "x402 via Circle Gateway",
       "status": "ok",
-      "checkedAt": "2026-08-30T16:30:58.439Z",
+      "checkedAt": "2026-08-30T20:53:40.862Z",
       "steps": [
         {
           "label": "account profile — SELAT Twitter user/info (x402 via Circle Gateway)",
@@ -1462,7 +1462,7 @@
           "reachable": true,
           "livePriceUsd": 0.001,
           "withinCap": true,
-          "latencyMs": 536,
+          "latencyMs": 649,
           "error": null
         },
         {
@@ -1475,7 +1475,7 @@
           "reachable": true,
           "livePriceUsd": 0.001,
           "withinCap": true,
-          "latencyMs": 359,
+          "latencyMs": 586,
           "error": null
         },
         {
@@ -1488,7 +1488,7 @@
           "reachable": true,
           "livePriceUsd": 0.001,
           "withinCap": true,
-          "latencyMs": 366,
+          "latencyMs": 556,
           "error": null
         },
         {
@@ -1501,7 +1501,7 @@
           "reachable": true,
           "livePriceUsd": 0.001,
           "withinCap": true,
-          "latencyMs": 364,
+          "latencyMs": 564,
           "error": null
         },
         {
@@ -1514,7 +1514,7 @@
           "reachable": true,
           "livePriceUsd": 0.001,
           "withinCap": true,
-          "latencyMs": 375,
+          "latencyMs": 561,
           "error": null
         },
         {
@@ -1527,7 +1527,7 @@
           "reachable": true,
           "livePriceUsd": 0.001,
           "withinCap": true,
-          "latencyMs": 355,
+          "latencyMs": 577,
           "error": null
         },
         {
@@ -1540,7 +1540,7 @@
           "reachable": true,
           "livePriceUsd": 0.001,
           "withinCap": true,
-          "latencyMs": 379,
+          "latencyMs": 559,
           "error": null
         },
         {
@@ -1553,7 +1553,7 @@
           "reachable": true,
           "livePriceUsd": 0.001,
           "withinCap": true,
-          "latencyMs": 360,
+          "latencyMs": 557,
           "error": null
         },
         {
@@ -1566,7 +1566,7 @@
           "reachable": true,
           "livePriceUsd": 0.001,
           "withinCap": true,
-          "latencyMs": 388,
+          "latencyMs": 547,
           "error": null
         }
       ]
@@ -1575,7 +1575,7 @@
       "name": "vc-ai-infra-scout",
       "rail": "mixed",
       "status": "degraded",
-      "checkedAt": "2026-08-30T16:30:58.439Z",
+      "checkedAt": "2026-08-30T20:53:40.862Z",
       "steps": [
         {
           "label": "broad web discovery — Tavily advanced search for ${thesis} + startup/funding signals (x402 on Base)",
@@ -1587,7 +1587,7 @@
           "reachable": false,
           "livePriceUsd": null,
           "withinCap": false,
-          "latencyMs": 2645,
+          "latencyMs": 2922,
           "error": "Cannot convert 0.016 to a BigInt"
         },
         {
@@ -1600,7 +1600,7 @@
           "reachable": true,
           "livePriceUsd": 0.0105,
           "withinCap": true,
-          "latencyMs": 6673,
+          "latencyMs": 7104,
           "error": null
         },
         {
@@ -1613,7 +1613,7 @@
           "reachable": true,
           "livePriceUsd": 0.00735,
           "withinCap": true,
-          "latencyMs": 739,
+          "latencyMs": 798,
           "error": null
         },
         {
@@ -1626,7 +1626,7 @@
           "reachable": true,
           "livePriceUsd": 0.001,
           "withinCap": true,
-          "latencyMs": 365,
+          "latencyMs": 575,
           "error": null
         },
         {
@@ -1639,7 +1639,7 @@
           "reachable": true,
           "livePriceUsd": 0.001,
           "withinCap": true,
-          "latencyMs": 363,
+          "latencyMs": 552,
           "error": null
         },
         {
@@ -1652,7 +1652,7 @@
           "reachable": false,
           "livePriceUsd": null,
           "withinCap": false,
-          "latencyMs": 2597,
+          "latencyMs": 8192,
           "error": "Cannot convert 0.016 to a BigInt"
         },
         {
@@ -1665,7 +1665,7 @@
           "reachable": true,
           "livePriceUsd": 0.001,
           "withinCap": true,
-          "latencyMs": 369,
+          "latencyMs": 577,
           "error": null
         },
         {
@@ -1678,7 +1678,7 @@
           "reachable": true,
           "livePriceUsd": 0.00525,
           "withinCap": true,
-          "latencyMs": 848,
+          "latencyMs": 1051,
           "error": null
         },
         {
@@ -1691,7 +1691,7 @@
           "reachable": true,
           "livePriceUsd": 0.0399,
           "withinCap": true,
-          "latencyMs": 594,
+          "latencyMs": 746,
           "error": null
         }
       ]
